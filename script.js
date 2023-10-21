@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.getElementById("searchInput");
-    const resultsContainer = document.getElementById("results");
+    const resultsContainer = document.getElementById("searchResults");
 
     searchInput.addEventListener("input", function () {
         const searchTerm = searchInput.value.toLowerCase();
 
         // データを取得
-        fetch("ewaia.json")
+        fetch("https://yuzki.github.io/test/ewaia.json")
             .then(response => response.json())
             .then(data => {
                 resultsContainer.innerHTML = "";
