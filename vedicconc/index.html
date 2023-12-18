@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transliteration App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="search-container">
+        <label for="search-input">Search:</label>
+        <input type="text" id="search-input">
+        (Regular expressions are effective, excluding the Tokunaga-Fujii)
+    </div>
+
+    <div id="options-container">
+        <label for="transliteration-option">Select Transliteration:</label>
+        <select id="transliteration-option" 
+        >
+        <!-- onchange="updateTransliteration()" -->
+            <option value="tf">Tokunaga-Fujii</option>
+            <option value="iast">IAST</option>
+            <option value="kh">Kyoto-Harvard</option>
+        </select>
+    </div>
+
+    <div id="result-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#search-container,
+#options-container {
+    margin-bottom: 10px;
+}
+
+#result-container {
+    margin-top: 20px;
+}
